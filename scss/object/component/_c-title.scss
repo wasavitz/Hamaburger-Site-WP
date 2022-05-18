@@ -1,0 +1,13 @@
+/* font-family: Roboto基準 */
+.c-title {
+    &--Roboto {
+        font-family: Roboto;
+    }
+    &--align-v {    /* v=virtical */
+        display: flex;
+        align-items: center;
+    }
+    &--color {
+        color: #FFFFFF;
+    }
+}

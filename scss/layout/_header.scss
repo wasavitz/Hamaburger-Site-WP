@@ -1,0 +1,9 @@
+@use "../foundation/mixin" as m;
+
+.l-header {
+    grid-row: 1 / 2;
+    /* @include m.mq(tab) {}    ※SPと同一 */
+    @include m.mq(pc) {
+        grid-column: 1 / 2;
+    }
+}

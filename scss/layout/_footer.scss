@@ -1,0 +1,12 @@
+/*   mixinの呼び出し -------------------- */
+@use "../foundation/mixin" as m;
+
+.l-footer {
+    grid-row: 3 / 4;
+    // grid-column: 1 / 2;
+    background-image: url(../img/footer-background.svg);
+    /* @include m.mq(tab) {}    ※SPと同一 */
+    @include m.mq(pc) {
+        grid-column: 1 / 3;
+    }
+}

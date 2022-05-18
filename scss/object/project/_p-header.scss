@@ -1,0 +1,43 @@
+/*  function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-header {
+    justify-content: space-evenly;
+    height: 217px;
+    background-color: #FFF7EF;
+    @include m.mq(tab) {
+    
+    }
+    @include m.mq(pc) {
+        flex-flow: inherit;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    &__title {
+        font-size: 40px;
+        text-align: center;
+        @include m.mq(tab) {
+        
+        }
+        @include m.mq(pc) {
+            margin-left: respoPC(31, 65);
+            font-size: respoPC(48, 64);
+        }
+    }
+    &__menu {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        font-size: 20px;
+        @include m.mq(tab) {
+            top: 18px;
+            right: 26px;
+            font-size: respoTB(20,34);
+        }
+        @include m.mq(pc) {
+            display: none;
+        }
+    }
+}

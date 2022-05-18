@@ -1,0 +1,14 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.c-container {
+    padding: 0 18px 0 22px;
+    @include m.mq(tab) {
+        padding: 0 respotab(22,42);
+    } 
+    @include m.mq(tab) {
+        max-width: 1553px; /* 画面1920px以上はコンテンツ幅固定 */
+        padding: 0 respoPC(42,100);
+    } 
+}

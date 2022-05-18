@@ -1,0 +1,11 @@
+/* 背景画像挿入時の基本共通プロパティ */
+.c-bg {
+    &--prop {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    &--glay {
+        background-color: #F5F5F5;
+    }
+}

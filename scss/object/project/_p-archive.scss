@@ -1,0 +1,66 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-archive {
+    display: grid;
+    grid-template-rows: 283px auto;
+    grid-template-columns: auto; 
+    @include m.mq(pc) {
+        grid-template-rows: 239px auto;
+    }
+    &__hero {
+        padding: 102px 0 0 37px;
+        background-image: url(../img/archive-hero-sp.svg);
+        background-color: #000000;
+        background-position: left center;
+        color: #ffffff;  /* スタイル継承のため親で指定 */
+        @include m.mq(tab) {
+            display: flex;
+            align-items: center;
+            padding: 0 0 0 86px;
+            background-image: url(../img/archive-hero-pc.svg);
+            background-position: center center;
+        }
+        &__title {
+            font-size: 36px;
+            margin: 0 0 7px 0;
+            @include m.mq(tab) {
+                margin: 0 20px 0 0;
+                font-size: 60px;
+            }
+        }
+        &__sub-title{
+            font-size: 16px;
+            line-height: calc(23/16);
+        }
+    }
+    &__description {
+        padding: 30px 0 19px 0;
+        color: #3C2A10;
+        @include m.mq(tab) {
+            padding: 36px 0 37px 0;
+        }
+        @include m.mq(pc) {
+            padding: 60px 0 70px 0;
+        }
+        &__heading {
+            margin-bottom: 30px;
+            font-size: 28px;
+            @include m.mq(tab) {
+                margin-bottom: 25px;
+                font-size: 36px;
+            }
+        }
+        &__text {
+            font-size: 16px;
+            line-height: calc(23/16);
+        }
+    }
+    &__cards {
+        gap: 20px;
+        @include m.mq(pc) {
+            gap: 30px;
+        }
+    }
+}

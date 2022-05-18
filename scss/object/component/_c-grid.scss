@@ -1,0 +1,6 @@
+/* <section class="p-access">重ね用 */
+.c-gird-area {
+    &--wrapper {
+        grid-area: 1/1/1/2;
+    }
+}

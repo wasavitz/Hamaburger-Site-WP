@@ -1,0 +1,130 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-article {
+    gap: 30px;
+    padding: 30px 0 177px 0;
+    color: #3C2A10;
+    @include m.mq(tab) {
+        gap: respoTB(30, 60);
+        padding: respoTB(30,60) 0 respoTB(177, 228) 0;
+    }
+    @include m.mq(pc) {
+        gap: 60px;
+        padding: 60px 0 respoPC(228, 353) 0;
+    }
+    figure {
+        padding: 30px 16px 30px 20px;
+        @include m.mq(tab) {
+            padding: respoTB(30,50) respoTB(16, 50) respoTB(30, 60) respoTB(20, 60);
+        }
+        @include m.mq(tab) {
+            padding: 50px 50px 60px 60px;
+        }
+        blockquote {
+            margin-bottom: 30px;
+            @include m.mq(tab) {
+                margin-bottom: respoTB(30,60);
+            }
+            @include m.mq(pc) {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    &__picture1 {
+        height: 124px;
+        @include m.mq(tab) {
+            height: 264px;
+        }
+        @include m.mq(pc) {
+            height: 500px;
+        }
+    }
+    &__card {
+        display: flex;
+        gap: 10px;
+        @include m.mq(tab) {
+            gap: 21px;
+        }
+        @include m.mq(pc) {
+            gap: 40px;
+        }
+        &__flame {
+            flex: 1 0 45%;
+        }
+        &__text {
+            flex: 1 1 55%;
+            max-height: 175px;
+            overflow: scroll;
+            -ms-overflow-style: none; /* IE, Edge 対応 */
+            scrollbar-width: none; /* Firefox 対応 */
+            @include m.mq(tab) {
+                max-height: 373px;
+            }
+            @include m.mq(pc) {
+                max-height: inherit;
+            }
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+    &__picture2 {
+        width: 45%;
+        margin: 0 auto;
+        @include m.mq(tab) {
+            width: 80%;
+        }
+        @include m.mq(pc) {
+            width: 45%;
+        }
+    }
+    &__gallery {
+        display: grid;
+        row-gap: 20px;
+        @include m.mq(tab) {
+            grid-template-columns: auto auto;
+            column-gap: 16px;
+        }
+        @include m.mq(pc) {
+            grid-template-columns: auto auto auto;
+            column-gap: 20px;
+        }
+    }
+    &__lists {
+        @include m.mq(tab) {
+            padding-left: 50px;
+        }
+        @include m.mq(pc) {
+        }
+    }
+    &__code {
+        padding: 50px 0 50px 50px;
+    }
+    &__table {
+        &__row1, &__row2 {
+            width: 40%;
+            border: solid 1px #707070;
+            padding: 28px 0 28px 30px;
+            @include m.mq(tab) {
+                width: 30%;
+            }
+            @include m.mq(pc) {
+            }
+        }
+        &__row2 {
+            width: 60%;
+            @include m.mq(tab) {
+                width: 70%;
+            }
+            @include m.mq(pc) {
+            }
+        }
+    }
+    &__button {
+        height: 81px;
+        max-width: 430px;
+        text-align: center;
+    }
+}

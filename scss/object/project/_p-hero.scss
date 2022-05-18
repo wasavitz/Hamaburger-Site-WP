@@ -1,0 +1,32 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-hero {
+    /* front-page */
+    position: relative;
+    height: 285px;
+    background-image: url(../img/front-page-hero--sp.svg);
+    @include m.mq(tab) {
+        background-image: url(../img/front-page-hero--tab.svg);
+    }
+    @include m.mq(pc) {
+        height: 530px;
+        background-image: url(../img/front-page-hero--pc.svg);
+    }
+    &__title {
+        position: absolute;
+        top: 119px;
+        left: 25px;
+        color: #FFFFFF;
+        font-size: 36px;
+        @include m.mq(tab) {
+            left: respoTab(50,86);
+        }
+        @include m.mq(pc) {
+            top: 231px;
+            left: respoPC(50,86);
+            font-size: 40px;
+        }
+    }
+}

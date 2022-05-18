@@ -1,0 +1,129 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-brunch {
+    display: flex; /* ブロック要素をセンター合わせ */
+    justify-content: center; /* ブロック要素をセンター合わせ */
+    @include m.mq(tab) {
+    }
+    @include m.mq(pc) {
+    }
+    &__wrapper {
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        margin: 20px 20px 49px 20px;
+        @include m.mq(tab) {
+            flex-flow: inherit;
+            gap: respoPC(20, 40);
+            margin: 40px;
+        }
+        @include m.mq(pc) {
+            gap: respoPC(40, 80);
+            margin: respoPC(40, 120) respoPC(40, 112) respoPC(40, 134) respoPC(40, 112);
+            width: 100%;
+        }
+    }
+}
+
+.p-brunch-menu {
+    display: flex;    /* 親要素に子要素（container）の高さを合わせるため */
+    min-height: 642px;
+    background-image: url(../img/font-page-Take.svg);
+    &:nth-child(2) {
+        background-image: url(../img/front-page-Eat.svg);
+    }
+    @include m.mq(tab) {
+        width: 100%;
+        min-height: 681px;
+    }
+    @include m.mq(pc) {
+        min-height: 1190px;
+    }
+    &__container {
+        justify-content: space-between;
+        margin: 20px;
+        width: 100%;
+        @include m.mq(tab) {
+            width: 100%;
+            margin: 20px;
+        }
+        @include m.mq(pc) {
+            width: 100%;
+            margin: 20px;
+        }
+        &__title {
+            position: relative;
+            margin-bottom: 100px; /* テキストボックスとの最低離隔 */
+            color: #EAEAEA;
+            font-size: 41px;
+            line-height: calc(54 / 41);
+            @include m.mq(tab) {
+                font-size: respoPC(44, 60);
+                line-height: calc(58 / 44); /* 必要？ */
+            }
+            @include m.mq(pc) {
+                font-size: respoPC(60, 80);
+                line-height: calc(79 / 60); /* 必要？ */
+            }
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 88px;
+                left: 0px;
+                width: 34px;
+                height: 4px;
+                background-color: #ffffff;
+                @include m.mq(tab) {
+                    top: 77.5px;
+                    width: 63px;
+                }
+                @include m.mq(pc) {
+                    /* 105px = 79px(line-height) + (　34.5px(title1下から線まで)　*　60/80(フォント比))  */
+                    top: respoPC(105, 140.5);
+                    /* 47px = 63px　*　60/80(フォント比)　)  */
+                    width: respoPC(47, 63);
+                }
+            }
+        }
+        &__Descriptions {
+            display: grid;
+            grid-template-rows: auto auto;
+            grid-template-columns: auto;
+            row-gap: 10px;
+            @include m.mq(pc) {
+                row-gap: 20px;
+            }
+        }
+    }
+}
+
+.p-brunch-desc {
+    padding: 10px;
+    height: auto;
+    min-height: 174px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    color: #3c2a10;
+    @include m.mq(tab) {
+        padding: 20px 15px 22px 11px;
+    }
+    @include m.mq(pc) {
+        padding: 17px 25px 17px 19px;
+    }
+    &__heading {
+        margin-bottom: 26px;
+        font-size: 19px;
+        @include m.mq(tab) {
+            margin-bottom: 20px;
+        }
+        @include m.mq(pc) {
+            margin-bottom: 26px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: calc(23 / 16);
+    }
+}

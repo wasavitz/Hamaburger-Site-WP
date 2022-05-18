@@ -1,0 +1,10 @@
+.c-flex {
+    display: flex;
+    &--flow {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    &--reverse {
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,45 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.c-heading {
+    /* 見出し部分のカスタムプロパティ */
+    :root {
+        --color-primary: #3C2A10;
+        --color-secondary: #3C2A10;
+        /* color:＃707070 foundationで指定 */
+    }
+    font-family: Roboto;
+    &__M-normal{
+        font-weight: normal;
+        font-family: M+PLUS+1p;
+    }
+    & &__R-normal {
+        font-weight: normal;
+    }
+    &--Lv2 {
+        color: var(--color-primary);
+        font-size: 28px;
+        line-height: 1.5; /* 今回はbodyの設定値と同様 */
+        @include m.mq(tab) {
+            font-size: 36px;
+        }
+        @include m.mq(pc) {
+        }
+    }
+    &--Lv3 {
+        color: var(--color-primary);
+        font-size: 24px;
+        line-height: 1.5; /* 今回はbodyの設定値と同様 */
+        @include m.mq(tab) {
+            font-size: 28px;
+        }
+        @include m.mq(pc) {
+        }
+    }
+    &--Lv4, &--Lv5, &--Lv6 {
+        color: var(--color-primary);
+        font-size: 20px;
+        line-height: 1.5; /* 今回はbodyの設定値と同様 */
+    }
+}

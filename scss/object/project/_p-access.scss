@@ -1,0 +1,79 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-access {
+    display: grid;
+    background-color: #000000;
+    &__picture {
+        grid-area: 1/1/1/2;
+        width: 100%;
+        height: 100%;
+    }
+    &__wrapper {
+        display: flex;
+        grid-area: 1/1/1/2;
+        height: 60%;
+        background-color: rgba(0, 0, 0, 0.29);
+        @include m.mq(tab) {
+            width: 100%;
+            height: inherit;
+        }
+        @include m.mq(pc) {
+            width: 61%;
+        }
+    }
+    &__desc {
+        grid-area: 1/1/1/2;
+        padding: 40px 29px 40px 40px;
+        color: #ffffff;
+        @include m.mq(tab) {
+            padding: 40px 40px 51px 40px;
+        }
+        @include m.mq(pc) {
+            width: 61%;
+            padding: respoPC(50,83) respoPC(50,134) 40px respoPC(50,119);
+        }
+        &__heading {
+            position: relative;
+            margin-bottom: 40px; /* headingとtextの最低離隔 */
+            font-size: 30px;
+            @include m.mq(tab) {
+            }
+            @include m.mq(pc) {
+                margin-bottom: 119px; /* headingとtextの最低離隔 */
+                font-size: 36px;
+            }
+            &::after {
+                content: " ";
+                position: absolute;
+                top: 65px;
+                left: 0px;
+                width: 75px;
+                height: 2px;
+                background-color: #ffffff;
+                @include m.mq(tab) {
+                }
+                @include m.mq(pc) {
+                    top: 102.5px;
+                }
+            }
+        }
+        &__text {
+            line-height: calc(33 / 14);
+            font-size: 14px;
+            @include m.mq(tab) {
+            }
+            @include m.mq(pc) {
+                line-height: calc(33 / 16);
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.p-access-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

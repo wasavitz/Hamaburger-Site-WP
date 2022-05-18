@@ -1,0 +1,14 @@
+.c-reset {
+    &--a { 
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: normal;
+    }
+    &--ul{
+        margin: 20px 0;
+    }
+    &--ol {
+        margin: 20px 0;
+    }
+}

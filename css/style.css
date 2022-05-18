@@ -1,0 +1,1670 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+/*モバイルファースト想定でのBreakpoints --------*/
+/**
+ *   レスポンシブ時の自動可変関数
+ * ==================================== */
+/*   PC画面1920px➡︎1025px-------------------- */
+/*   モバイル画面1024px➡︎600px-------------------- */
+/*レスポンシブ対応呼び出し --------*/
+body {
+  display: grid;
+  grid-template-rows: 217px auto 150px;
+  grid-template-columns: auto auto;
+  color: #707070;
+  font-weight: bold;
+  line-height: 1.5;
+  font-family: MPLUS1p;
+}
+@media screen and (min-width: 1025px) {
+  body {
+    grid-template-columns: auto calc(270px + 97 * ( 100vw - 1025px ) / 895 );
+  }
+}
+
+.stop {
+  overflow: hidden;
+}
+
+/*   mixinの呼び出し -------------------- */
+.l-footer {
+  grid-row: 3/4;
+  background-image: url(../img/footer-background.svg);
+  /* @include m.mq(tab) {}    ※SPと同一 */
+}
+@media screen and (min-width: 1025px) {
+  .l-footer {
+    grid-column: 1/3;
+  }
+}
+
+.l-header {
+  grid-row: 1/2;
+  /* @include m.mq(tab) {}    ※SPと同一 */
+}
+@media screen and (min-width: 1025px) {
+  .l-header {
+    grid-column: 1/2;
+  }
+}
+
+/*   mixinの呼び出し -------------------- */
+/* front-page */
+.l-main {
+  grid-row: 2/3;
+  /* @include m.mq(tab) {}    ※SPと同一 */
+}
+@media screen and (min-width: 1025px) {
+  .l-main {
+    grid-column: 1/2;
+  }
+}
+
+/*   mixinの呼び出し -------------------- */
+.l-sidebar {
+  grid-row: 1/4;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 200;
+  height: 100%;
+  background-color: #f2ede9;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 1025px) {
+  .l-sidebar {
+    position: initial;
+    top: initial;
+    right: initial;
+    display: block;
+    grid-row: 1/3;
+    grid-column: 2/3;
+  }
+}
+.l-sidebar--open {
+  right: 0;
+}
+
+/* 背景画像挿入時の基本共通プロパティ */
+.c-bg--prop {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.c-bg--glay {
+  background-color: #F5F5F5;
+}
+
+/* 検索ボックスを基準に作成 */
+.c-box {
+  display: inline-block;
+  height: 46px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #707070;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+/* 検索ボタンを基準に作成 */
+.c-button {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #707070;
+  border-radius: 10px;
+  background-color: #F2EDE9;
+}
+
+/* font-family: Roboto基準 */
+.c-border {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #707070;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.c-container {
+  padding: 0 18px 0 22px;
+}
+@media screen and (min-width: 600px) {
+  .c-container {
+    padding: 0 respotab(22, 42);
+  }
+}
+@media screen and (min-width: 600px) {
+  .c-container {
+    max-width: 1553px;
+    /* 画面1920px以上はコンテンツ幅固定 */
+    padding: 0 calc(42px + 58 * ( 100vw - 1025px ) / 895 );
+  }
+}
+
+.c-flex {
+  display: flex;
+}
+.c-flex--flow {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.c-flex--reverse {
+  flex-direction: row-reverse;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.c-heading {
+  /* 見出し部分のカスタムプロパティ */
+  font-family: Roboto;
+}
+.c-heading :root {
+  --color-primary: #3C2A10;
+  --color-secondary: #3C2A10;
+  /* color:＃707070 foundationで指定 */
+}
+.c-heading__M-normal {
+  font-weight: normal;
+  font-family: MPLUS1p;
+}
+.c-heading .c-heading__R-normal {
+  font-weight: normal;
+}
+.c-heading--Lv2 {
+  color: var(--color-primary);
+  font-size: 28px;
+  line-height: 1.5;
+  /* 今回はbodyの設定値と同様 */
+}
+@media screen and (min-width: 600px) {
+  .c-heading--Lv2 {
+    font-size: 36px;
+  }
+}
+.c-heading--Lv3 {
+  color: var(--color-primary);
+  font-size: 24px;
+  line-height: 1.5;
+  /* 今回はbodyの設定値と同様 */
+}
+@media screen and (min-width: 600px) {
+  .c-heading--Lv3 {
+    font-size: 28px;
+  }
+}
+.c-heading--Lv4, .c-heading--Lv5, .c-heading--Lv6 {
+  color: var(--color-primary);
+  font-size: 20px;
+  line-height: 1.5;
+  /* 今回はbodyの設定値と同様 */
+}
+
+.c-page-nation {
+  margin: 60px 0 31px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .c-page-nation {
+    margin: respoTB(60, 106) 0 31px 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c-page-nation {
+    margin: respoPC(106, 150) 0 respoPC(31, 64) 0;
+  }
+}
+.c-page-nation__text {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .c-page-nation__text {
+    display: block;
+    font-size: 16px;
+    line-height: 2.0625;
+  }
+}
+.c-page-nation__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .c-page-nation__body {
+    justify-content: inherit;
+    gap: 14px;
+    width: auto;
+  }
+}
+.c-page-nation__body__number {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .c-page-nation__body__number {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #707070;
+    font-family: Roboto;
+    text-align: center;
+  }
+  .c-page-nation__body__number:hover {
+    color: #ffffff;
+    background-color: #3c2b1c;
+  }
+}
+.c-page-nation__body__list {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #707070;
+}
+@media screen and (min-width: 600px) {
+  .c-page-nation__body__list {
+    font-size: 0px;
+  }
+}
+.c-page-nation__body li:nth-child(1) a::before,
+.c-page-nation__body li:nth-child(11) a::after {
+  content: " ";
+  display: block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  margin-left: 8px;
+  background-image: url(../img/page-nation.svg);
+}
+.c-page-nation__body li:nth-child(11) a::after {
+  margin-left: 8px;
+  transform: rotate(180deg);
+}
+
+.c-picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+/* 『Menu』クリック時のアニメーション */
+.c-transition {
+  transition: 0.5s;
+}
+
+.c-text {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4375;
+}
+
+/* font-family: Roboto基準 */
+.c-title--Roboto {
+  font-family: Roboto;
+}
+.c-title--align-v {
+  /* v=virtical */
+  display: flex;
+  align-items: center;
+}
+.c-title--color {
+  color: #FFFFFF;
+}
+
+/* 『Menu』クリック時の全体カバー */
+.c-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(51, 51, 51, 0.5);
+  display: none;
+  top: 0;
+  left: 0;
+}
+
+.c-reset--a {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+  font-style: normal;
+}
+.c-reset--ul {
+  margin: 20px 0;
+}
+.c-reset--ol {
+  margin: 20px 0;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-search {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1025px) {
+  .p-search {
+    margin-right: 31px;
+  }
+}
+.p-search:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  left: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/search-icon.svg);
+  /* style.scssからimgフォルダを指定 */
+  background-position: center center;
+}
+.p-search__box {
+  width: 230px;
+  padding: 0 0 0 40px;
+}
+@media screen and (min-width: 600px) {
+  .p-search__box {
+    width: calc(230px + 166 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-search__box {
+    width: calc(240px + 156 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-search__button {
+  width: 78px;
+  height: 46px;
+  margin-left: 13px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .p-search__button {
+    width: calc(78px + 58 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-search__button {
+    width: calc(100px + 36 * ( 100vw - 1025px ) / 895 );
+  }
+}
+
+/*  function, mixinの呼び出し -------------------- */
+.p-header {
+  justify-content: space-evenly;
+  height: 217px;
+  background-color: #FFF7EF;
+}
+@media screen and (min-width: 1025px) {
+  .p-header {
+    flex-flow: inherit;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}
+.p-header__title {
+  font-size: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1025px) {
+  .p-header__title {
+    margin-left: calc(31px + 34 * ( 100vw - 1025px ) / 895 );
+    font-size: calc(48px + 16 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-header__menu {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  font-size: 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-header__menu {
+    top: 18px;
+    right: 26px;
+    font-size: calc(20px + 14 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-header__menu {
+    display: none;
+  }
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-sidebar {
+  padding-top: 82px;
+  padding-left: 46px;
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar {
+    padding-left: calc(20px + 26 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-sidebar__title {
+  display: block;
+  margin-bottom: 85px;
+  font-size: 34px;
+  visibility: hidden;
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar__title {
+    visibility: visible;
+  }
+}
+.p-sidebar__button {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 300;
+  width: 250px;
+  /* スマホ・タブレットのみ */
+}
+@media screen and (min-width: 1025px) {
+  .p-sidebar__button {
+    position: inherit;
+    top: inherit;
+    right: inherit;
+    width: inherit;
+  }
+}
+.p-sidebar__button--open {
+  right: 20px;
+  /* スクロールバーとの被り防止 */
+  z-index: 20;
+  height: 57px;
+  background-color: #f2ede9;
+}
+
+.p-sidebar-button {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 32px;
+  height: 32px;
+}
+.p-sidebar-button__line {
+  display: inline-block;
+}
+.p-sidebar-button__line--open {
+  position: absolute;
+  /* この設定でなぜ綺麗に揃うか？ */
+  height: 6px;
+  width: 45px;
+  background-color: #707070;
+  transform: rotate(-135deg);
+}
+.p-sidebar-button__line--open:first-child {
+  transform: rotate(-45deg);
+}
+
+.p-sidebar-menu__list {
+  display: inline-block;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.p-sidebar-menu__sub-menu {
+  margin-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 49px;
+}
+.p-sidebar-menu__sub-menu__list {
+  display: inline-block;
+  margin-bottom: 23px;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-article {
+  gap: 30px;
+  padding: 30px 0 177px 0;
+  color: #3C2A10;
+}
+@media screen and (min-width: 600px) {
+  .p-article {
+    gap: calc(30px + 30 * ( 100vw - 600px ) / 424 );
+    padding: calc(30px + 30 * ( 100vw - 600px ) / 424 ) 0 calc(177px + 51 * ( 100vw - 600px ) / 424 ) 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article {
+    gap: 60px;
+    padding: 60px 0 calc(228px + 125 * ( 100vw - 1025px ) / 895 ) 0;
+  }
+}
+.p-article figure {
+  padding: 30px 16px 30px 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-article figure {
+    padding: calc(30px + 20 * ( 100vw - 600px ) / 424 ) calc(16px + 34 * ( 100vw - 600px ) / 424 ) calc(30px + 30 * ( 100vw - 600px ) / 424 ) calc(20px + 40 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-article figure {
+    padding: 50px 50px 60px 60px;
+  }
+}
+.p-article figure blockquote {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  .p-article figure blockquote {
+    margin-bottom: calc(30px + 30 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article figure blockquote {
+    margin-bottom: 50px;
+  }
+}
+.p-article__picture1 {
+  height: 124px;
+}
+@media screen and (min-width: 600px) {
+  .p-article__picture1 {
+    height: 264px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__picture1 {
+    height: 500px;
+  }
+}
+.p-article__card {
+  display: flex;
+  gap: 10px;
+}
+@media screen and (min-width: 600px) {
+  .p-article__card {
+    gap: 21px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__card {
+    gap: 40px;
+  }
+}
+.p-article__card__flame {
+  flex: 1 0 45%;
+}
+.p-article__card__text {
+  flex: 1 1 55%;
+  max-height: 175px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
+}
+@media screen and (min-width: 600px) {
+  .p-article__card__text {
+    max-height: 373px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__card__text {
+    max-height: inherit;
+  }
+}
+.p-article__card__text::-webkit-scrollbar {
+  display: none;
+}
+.p-article__picture2 {
+  width: 45%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 600px) {
+  .p-article__picture2 {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__picture2 {
+    width: 45%;
+  }
+}
+.p-article__gallery {
+  display: grid;
+  row-gap: 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-article__gallery {
+    grid-template-columns: auto auto;
+    -moz-column-gap: 16px;
+         column-gap: 16px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-article__gallery {
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-article__lists {
+    padding-left: 50px;
+  }
+}
+.p-article__code {
+  padding: 50px 0 50px 50px;
+}
+.p-article__table__row1, .p-article__table__row2 {
+  width: 40%;
+  border: solid 1px #707070;
+  padding: 28px 0 28px 30px;
+}
+@media screen and (min-width: 600px) {
+  .p-article__table__row1, .p-article__table__row2 {
+    width: 30%;
+  }
+}
+.p-article__table__row2 {
+  width: 60%;
+}
+@media screen and (min-width: 600px) {
+  .p-article__table__row2 {
+    width: 70%;
+  }
+}
+.p-article__button {
+  height: 81px;
+  max-width: 430px;
+  text-align: center;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-hero {
+  /* front-page */
+  position: relative;
+  height: 285px;
+  background-image: url(../img/front-page-hero--sp.svg);
+}
+@media screen and (min-width: 600px) {
+  .p-hero {
+    background-image: url(../img/front-page-hero--tab.svg);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-hero {
+    height: 530px;
+    background-image: url(../img/front-page-hero--pc.svg);
+  }
+}
+.p-hero__title {
+  position: absolute;
+  top: 119px;
+  left: 25px;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+@media screen and (min-width: 600px) {
+  .p-hero__title {
+    left: respoTab(50, 86);
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-hero__title {
+    top: 231px;
+    left: calc(50px + 36 * ( 100vw - 1025px ) / 895 );
+    font-size: 40px;
+  }
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-brunch {
+  display: flex;
+  /* ブロック要素をセンター合わせ */
+  justify-content: center;
+  /* ブロック要素をセンター合わせ */
+}
+.p-brunch__wrapper {
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin: 20px 20px 49px 20px;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch__wrapper {
+    flex-flow: inherit;
+    gap: calc(20px + 20 * ( 100vw - 1025px ) / 895 );
+    margin: 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch__wrapper {
+    gap: calc(40px + 40 * ( 100vw - 1025px ) / 895 );
+    margin: calc(40px + 80 * ( 100vw - 1025px ) / 895 ) calc(40px + 72 * ( 100vw - 1025px ) / 895 ) calc(40px + 94 * ( 100vw - 1025px ) / 895 ) calc(40px + 72 * ( 100vw - 1025px ) / 895 );
+    width: 100%;
+  }
+}
+
+.p-brunch-menu {
+  display: flex;
+  /* 親要素に子要素（container）の高さを合わせるため */
+  min-height: 642px;
+  background-image: url(../img/font-page-Take.svg);
+}
+.p-brunch-menu:nth-child(2) {
+  background-image: url(../img/front-page-Eat.svg);
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-menu {
+    width: 100%;
+    min-height: 681px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-menu {
+    min-height: 1190px;
+  }
+}
+.p-brunch-menu__container {
+  justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-menu__container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-menu__container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+.p-brunch-menu__container__title {
+  position: relative;
+  margin-bottom: 100px;
+  /* テキストボックスとの最低離隔 */
+  color: #EAEAEA;
+  font-size: 41px;
+  line-height: 1.3170731707;
+}
+.p-brunch-menu__container__title:nth-child(2) {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-menu__container__title {
+    font-size: calc(44px + 16 * ( 100vw - 1025px ) / 895 );
+    line-height: 1.3181818182;
+    /* 必要？ */
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-menu__container__title {
+    font-size: calc(60px + 20 * ( 100vw - 1025px ) / 895 );
+    line-height: 1.3166666667;
+    /* 必要？ */
+  }
+}
+.p-brunch-menu__container__title::after {
+  content: " ";
+  position: absolute;
+  top: 88px;
+  left: 0px;
+  width: 34px;
+  height: 4px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-menu__container__title::after {
+    top: 77.5px;
+    width: 63px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-menu__container__title::after {
+    /* 105px = 79px(line-height) + (　34.5px(title1下から線まで)　*　60/80(フォント比))  */
+    top: calc(105px + 35.5 * ( 100vw - 1025px ) / 895 );
+    /* 47px = 63px　*　60/80(フォント比)　)  */
+    width: calc(47px + 16 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-brunch-menu__container__Descriptions {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  row-gap: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-menu__container__Descriptions {
+    row-gap: 20px;
+  }
+}
+
+.p-brunch-desc {
+  padding: 10px;
+  height: auto;
+  min-height: 174px;
+  background-color: #ffffff;
+  opacity: 0.8;
+  color: #3c2a10;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-desc {
+    padding: 20px 15px 22px 11px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-desc {
+    padding: 17px 25px 17px 19px;
+  }
+}
+.p-brunch-desc__heading {
+  margin-bottom: 26px;
+  font-size: 19px;
+}
+@media screen and (min-width: 600px) {
+  .p-brunch-desc__heading {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-brunch-desc__heading {
+    margin-bottom: 26px;
+  }
+}
+.p-brunch-desc__text {
+  font-size: 16px;
+  line-height: 1.4375;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-access {
+  display: grid;
+  background-color: #000000;
+}
+.p-access__picture {
+  grid-area: 1/1/1/2;
+  width: 100%;
+  height: 100%;
+}
+.p-access__wrapper {
+  display: flex;
+  grid-area: 1/1/1/2;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.29);
+}
+@media screen and (min-width: 600px) {
+  .p-access__wrapper {
+    width: 100%;
+    height: inherit;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access__wrapper {
+    width: 61%;
+  }
+}
+.p-access__desc {
+  grid-area: 1/1/1/2;
+  padding: 40px 29px 40px 40px;
+  color: #ffffff;
+}
+@media screen and (min-width: 600px) {
+  .p-access__desc {
+    padding: 40px 40px 51px 40px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-access__desc {
+    width: 61%;
+    padding: calc(50px + 33 * ( 100vw - 1025px ) / 895 ) calc(50px + 84 * ( 100vw - 1025px ) / 895 ) 40px calc(50px + 69 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-access__desc__heading {
+  position: relative;
+  margin-bottom: 40px;
+  /* headingとtextの最低離隔 */
+  font-size: 30px;
+}
+@media screen and (min-width: 1025px) {
+  .p-access__desc__heading {
+    margin-bottom: 119px;
+    /* headingとtextの最低離隔 */
+    font-size: 36px;
+  }
+}
+.p-access__desc__heading::after {
+  content: " ";
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  width: 75px;
+  height: 2px;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 1025px) {
+  .p-access__desc__heading::after {
+    top: 102.5px;
+  }
+}
+.p-access__desc__text {
+  line-height: 2.3571428571;
+  font-size: 14px;
+}
+@media screen and (min-width: 1025px) {
+  .p-access__desc__text {
+    line-height: 2.0625;
+    font-size: 16px;
+  }
+}
+
+.p-access-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-footer {
+  justify-content: space-between;
+  padding-top: 39px;
+}
+.p-footer__Nav {
+  margin-bottom: 34px;
+}
+.p-footer__copyright {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.p-footer-nav {
+  display: flex;
+  justify-content: center;
+}
+.p-footer-nav__item {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.p-footer-nav__line {
+  display: block;
+  width: 1px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+  background-color: #FFFFFF;
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-archive {
+  display: grid;
+  grid-template-rows: 283px auto;
+  grid-template-columns: auto;
+}
+@media screen and (min-width: 1025px) {
+  .p-archive {
+    grid-template-rows: 239px auto;
+  }
+}
+.p-archive__hero {
+  padding: 102px 0 0 37px;
+  background-image: url(../img/archive-hero-sp.svg);
+  background-color: #000000;
+  background-position: left center;
+  color: #ffffff;
+  /* スタイル継承のため親で指定 */
+}
+@media screen and (min-width: 600px) {
+  .p-archive__hero {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 86px;
+    background-image: url(../img/archive-hero-pc.svg);
+    background-position: center center;
+  }
+}
+.p-archive__hero__title {
+  font-size: 36px;
+  margin: 0 0 7px 0;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__hero__title {
+    margin: 0 20px 0 0;
+    font-size: 60px;
+  }
+}
+.p-archive__hero__sub-title {
+  font-size: 16px;
+  line-height: 1.4375;
+}
+.p-archive__description {
+  padding: 30px 0 19px 0;
+  color: #3C2A10;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__description {
+    padding: 36px 0 37px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-archive__description {
+    padding: 60px 0 70px 0;
+  }
+}
+.p-archive__description__heading {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__description__heading {
+    margin-bottom: 25px;
+    font-size: 36px;
+  }
+}
+.p-archive__description__text {
+  font-size: 16px;
+  line-height: 1.4375;
+}
+.p-archive__cards {
+  gap: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .p-archive__cards {
+    gap: 30px;
+  }
+}
+
+/*   function, mixinの呼び出し -------------------- */
+@media screen and (min-width: 600px) {
+  .p-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .p-card__flame {
+    grid-row: inherit;
+    grid-column: 1/2;
+  }
+}
+.p-card__flame__picture {
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-card__description {
+  padding: 30px 0 44px 0;
+  height: 100%;
+  background-color: #3c2b1c;
+}
+@media screen and (min-width: 600px) {
+  .p-card__description {
+    grid-row: inherit;
+    grid-column: 2/3;
+    padding: 30px 0 40px 0;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-card__description {
+    grid-column: 2/3;
+    padding: calc(30px + 23 * ( 100vw - 1025px ) / 895 ) 0 calc(40px + 20 * ( 100vw - 1025px ) / 895 ) 0;
+  }
+}
+
+.p-card-desc {
+  padding: 30px 0 40px 17px;
+  color: #ffffff;
+}
+@media screen and (min-width: 600px) {
+  .p-card-desc {
+    padding: 0 0 calc(40px + 5 * ( 100vw - 600px ) / 424 ) calc(17px + 18 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-card-desc {
+    padding: 0 0 calc(45px + 15 * ( 100vw - 1025px ) / 895 ) calc(35px + 28 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-card-desc__title {
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+@media screen and (min-width: 1025px) {
+  .p-card-desc__title {
+    margin-bottom: calc(24px + 23 * ( 100vw - 1025px ) / 895 );
+    font-size: calc(20px + 16 * ( 100vw - 1025px ) / 895 );
+  }
+}
+.p-card-desc__block__heading {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1025px) {
+  .p-card-desc__block__heading {
+    font-size: calc(16px + 8 * ( 100vw - 1025px ) / 895 );
+    margin-bottom: 17px;
+  }
+}
+.p-card-desc__block__text {
+  width: 85%;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4375;
+}
+
+.p-card-button {
+  display: grid;
+  place-items: center;
+}
+.p-card-button__link {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+  min-width: 160px;
+  padding: 10px 0;
+  border-radius: 38px;
+  background-color: #ffffff;
+  color: #707070;
+  font-size: 16px;
+  line-height: 2.0625;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .p-card-button__link {
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-single__hero {
+  height: 225px;
+  background-image: url(../img/single-hero-pc.svg);
+}
+@media screen and (min-width: 600px) {
+  .p-single__hero {
+    height: 500px;
+  }
+}
+.p-single__hero__title {
+  margin-left: 26px;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+@media screen and (min-width: 600px) {
+  .p-single__hero__title {
+    margin-left: calc(26px + 60 * ( 100vw - 600px ) / 424 );
+    font-size: calc(36px + 24 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-single__hero__title {
+    margin-left: 86px;
+    font-size: 60px;
+  }
+}
+
+/*   function, mixinの呼び出し -------------------- */
+.p-page__hero {
+  height: 225px;
+  background-image: url(../img/page-hero.svg);
+}
+@media screen and (min-width: 600px) {
+  .p-page__hero {
+    height: 500px;
+  }
+}
+.p-page__hero__title {
+  margin-left: 26px;
+  color: #FFFFFF;
+  font-size: 36px;
+}
+@media screen and (min-width: 600px) {
+  .p-page__hero__title {
+    margin-left: calc(26px + 60 * ( 100vw - 600px ) / 424 );
+    font-size: calc(36px + 24 * ( 100vw - 600px ) / 424 );
+  }
+}
+@media screen and (min-width: 1025px) {
+  .p-page__hero__title {
+    margin-left: 86px;
+    font-size: 60px;
+  }
+}
+
+.u-height--100per {
+  height: 100%;
+}
+
+.u-margin--top-reset {
+  margin-top: inherit;
+}
+.u-margin--bottom-reset {
+  margin-bottom: inherit;
+}
+
+.u-padding--left-18px {
+  padding-left: 18px;
+}
+
+/**
+ *   Foundation
+ * ==================================== */
+/**
+ *   Layout
+ * ==================================== */
+/**
+ *   Object
+ * ==================================== */
+/*   Component -------------------- */
+/*   Project -------------------- */
+/*   Utility -------------------- */
+/*# sourceMappingURL=style.css.map */

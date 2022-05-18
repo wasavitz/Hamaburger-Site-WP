@@ -1,0 +1,19 @@
+/*レスポンシブ対応呼び出し --------*/
+@use "mixin" as m;
+@use "function" as *;
+
+body {
+    display: grid;
+    grid-template-rows: 217px auto 150px;
+    grid-template-columns: auto auto;
+    color: #707070;
+    font-weight: bold;
+    line-height: 1.5;
+    font-family: M+PLUS+1p;
+    @include m.mq(pc) {
+        grid-template-columns: auto respoPC(270, 367);
+    }
+}
+.stop {
+    overflow: hidden;
+}

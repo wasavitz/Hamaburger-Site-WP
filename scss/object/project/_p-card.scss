@@ -1,0 +1,93 @@
+/*   function, mixinの呼び出し -------------------- */
+@use "../../foundation/mixin" as m;
+@use "../../foundation/function" as *;
+
+.p-card {
+    @include m.mq(tab) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    &__flame {
+        @include m.mq(tab) {
+            grid-row: inherit;
+            grid-column: 1/2;
+        }
+        &__picture {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__description {
+        padding: 30px 0 44px 0;
+        height: 100%;
+        background-color: #3c2b1c;
+        @include m.mq(tab) {
+            grid-row: inherit;
+            grid-column: 2/3;
+            padding: 30px 0 40px 0;
+        }
+        @include m.mq(pc) {
+            grid-column: 2/3;
+            padding: respoPC(30, 53) 0 respoPC(40, 60) 0;
+        }
+    }
+}
+
+.p-card-desc {
+    padding: 30px 0 40px 17px;
+    color: #ffffff;
+    @include m.mq(tab) {
+        padding: 0 0 respoTB(40, 45) respoTB(17, 35);
+    }
+    @include m.mq(pc) {
+        padding: 0 0 respoPC(45, 60) respoPC(35, 63);
+    }
+    &__title {
+        margin-bottom: 24px;
+        font-size: 20px;
+        @include m.mq(pc) {
+            margin-bottom: respoPC(24, 47);
+            font-size: respoPC(20, 36);
+        }
+    }
+    &__block {
+        &__heading {
+            font-size: 16px;
+            margin-bottom: 10px;
+            @include m.mq(pc) {
+                font-size: respoPC(16, 24);
+                margin-bottom: 17px;
+            }
+        }
+        &__text {
+            width: 85%;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: calc(23 / 16);
+        }
+    }
+}
+.p-card-button {
+    display: grid;
+    place-items: center;
+    &__link {
+        display: inline-block;
+        text-align: center;
+        // align-items: center;
+        width: 50%;
+        min-width: 160px;
+        padding: 10px 0;
+        border-radius: 38px;
+        background-color: #ffffff;
+        color: #707070;
+        font-size: 16px;
+        line-height: calc(33 / 16);
+        cursor: pointer;
+        @include m.mq(tab) {
+            width: 80%;
+            max-width: 250px;
+        }
+    }
+}
