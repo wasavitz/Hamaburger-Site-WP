@@ -47,7 +47,7 @@
         <section class="p-archive__cards c-flex--flow">
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -68,7 +68,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -89,7 +89,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">

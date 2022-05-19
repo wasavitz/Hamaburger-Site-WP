@@ -12,9 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="sidebar-function.js"></script>
+  <script src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/sidebar-function.js"></script>
 </head>
 
 <body>  
@@ -93,9 +93,9 @@
       </section>
       <section class="p-access">
         <picture class="p-access__picture">
-          <source srcset="img/access-map--tab.svg" media="(min-width: 1025px)" />
-          <source srcset="img/access-map--pc.svg" media="(min-width: 600px)" />
-          <img src="img/access-map--sp.svg" alt="アクセス" class="p-access-image" />
+          <source srcset="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/access-map--tab.svg" media="(min-width: 1025px)" />
+          <source srcset="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/access-map--pc.svg" media="(min-width: 600px)" />
+          <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/access-map--sp.svg" alt="アクセス" class="p-access-image" />
         </picture>
         <div class="p-access__wrapper">
         </div>

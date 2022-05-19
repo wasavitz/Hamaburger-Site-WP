@@ -1192,9 +1192,6 @@ body {
   font-size: 41px;
   line-height: 1.3170731707;
 }
-.p-brunch-menu__container__title:nth-child(2) {
-  color: #FFFFFF;
-}
 @media screen and (min-width: 600px) {
   .p-brunch-menu__container__title {
     font-size: calc(44px + 16 * ( 100vw - 1025px ) / 895 );

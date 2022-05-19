@@ -12,9 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="sidebar-function.js"></script>
+  <script src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/sidebar-function.js"></script>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
         <section class="p-archive__cards c-flex--flow">
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -68,7 +68,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -89,7 +89,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -110,7 +110,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
@@ -131,7 +131,7 @@
           </article>
           <article class="p-card">
             <div class="p-card__flame">
-              <img src="img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
+              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheese-burger-PC.svg" alt="" class="p-card__flame__picture">
             </div>
             <div class="p-card__description">
               <div class="p-card-desc">
