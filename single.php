@@ -12,9 +12,9 @@
     href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
-  <link href="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/css/style.css" rel="stylesheet">
+  <link href="<?php echo get_template_directory_uri();?>/css/style.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/sidebar-function.js"></script>
+  <script src="<?php echo get_template_directory_uri();?>/sidebar-function.js"></script>
   <?php wp_head();?>
 </head>
 
@@ -58,11 +58,11 @@
             </figcaption>
           </figure>
           <div class="p-article__picture1 u-height--100per">
-            <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-hero.svg" alt="" class="c-picture">
+            <img src="<?php echo get_template_directory_uri();?>/img/cheeseburger-set-hero.svg" alt="" class="c-picture">
           </div>
           <div class="p-article__card">
             <div class="p-article__card__flame">
-              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
+              <img src="<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
             </div>
             <p class="p-article__card__text c-text">
               テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -73,7 +73,7 @@
           </div>
           <div class="p-article__card c-flex--reverse">
             <div class="p-article__card__flame">
-              <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
+              <img src="<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
             </div>
             <p class="p-article__card__text c-text">
               テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
@@ -86,18 +86,18 @@
             </p>
           </div>
           <div class="p-article__picture2">
-            <img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
+            <img src="<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="" class="c-border c-picture">
           </div>
           <ul class="p-article__gallery">
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
-            <li><img src="http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/http://wabisabiburger.local/wp-content/themes/Hamburger-Site-WP/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
+            <li><img src="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/img/cheeseburger-set-common.svg" alt="チーズバーガーセット" class="c-picture c-border"></li>
           </ul>
           <div class="p-article__lists c-text">
             <ol class="c-reset--ol u-margin--top-reset">
