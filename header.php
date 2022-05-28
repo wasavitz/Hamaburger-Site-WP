@@ -16,7 +16,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class( $class );?>>
+<body <?php body_class();?>>
   <header class="l-header">
     <div class="p-header c-flex--flow">
       <h1 class="c-title--Roboto p-header__title">
@@ -25,6 +25,6 @@
       <h2 class="c-title--Roboto p-header__menu">
         <button type="button" class="menu-button">Menu</button>
       </h2>
-      <?php get_search_form( $echo );?>
+      <?php get_search_form( );?>
     </div>
 </header>
