@@ -1,10 +1,3 @@
-<?php 
-    $templates = wp_get_theme()->get_page_templates();
-    foreach ( $templates as $template_name => $template_filename ) {
-        echo "$template_name ($template_filename)<br />";
-    }
- ?>
-
 <?php
 /* 
  *
@@ -17,11 +10,10 @@
 
   <main class="l-main">
     <article>
-      <section class="p-hero c-bg--prop">
-        <h2 class="p-hero__title">
+      <section class="p-hero-top c-bg--prop">
+        <h2 class="p-hero-top__title">
           ダミーサイト
         </h2>
-        <p>テスト</p>
       </section>
       <section class="p-brunch">
         <ul class="p-brunch__wrapper c-flex--flow">

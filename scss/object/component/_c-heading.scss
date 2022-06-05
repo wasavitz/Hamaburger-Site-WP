@@ -17,29 +17,4 @@
     & &__R-normal {
         font-weight: normal;
     }
-    &--Lv2 {
-        color: var(--color-primary);
-        font-size: 28px;
-        line-height: 1.5; /* 今回はbodyの設定値と同様 */
-        @include m.mq(tab) {
-            font-size: 36px;
-        }
-        @include m.mq(pc) {
-        }
-    }
-    &--Lv3 {
-        color: var(--color-primary);
-        font-size: 24px;
-        line-height: 1.5; /* 今回はbodyの設定値と同様 */
-        @include m.mq(tab) {
-            font-size: 28px;
-        }
-        @include m.mq(pc) {
-        }
-    }
-    &--Lv4, &--Lv5, &--Lv6 {
-        color: var(--color-primary);
-        font-size: 20px;
-        line-height: 1.5; /* 今回はbodyの設定値と同様 */
-    }
 }

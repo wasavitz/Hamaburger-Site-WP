@@ -3,6 +3,36 @@
 @use "../../foundation/function" as *;
 
 .p-hero {
+    position: relative;
+    .wp-post-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100% !important;
+        height: 225px !important;
+        object-fit: cover;
+        @include m.mq(tab) {
+            height: 500px !important;
+        }
+    }
+    &__title {
+        position: absolute;
+        top: 91px;
+        margin-left: 26px;
+        color: #ffffff;
+        font-size: 36px;
+        @include m.mq(tab) {
+            top: 208px;
+            margin-left: respoTB(26, 86);
+            font-size: respoTB(36, 60);
+        }
+        @include m.mq(pc) {
+            margin-left: 86px;
+            font-size: 60px;
+        }
+    }
+}
+.p-hero-top {
     /* front-page */
     position: relative;
     height: 285px;
@@ -18,14 +48,14 @@
         position: absolute;
         top: 119px;
         left: 25px;
-        color: #FFFFFF;
+        color: #ffffff;
         font-size: 36px;
         @include m.mq(tab) {
-            left: respoTab(50,86);
+            left: respoTab(50, 86);
         }
         @include m.mq(pc) {
             top: 231px;
-            left: respoPC(50,86);
+            left: respoPC(50, 86);
             font-size: 40px;
         }
     }

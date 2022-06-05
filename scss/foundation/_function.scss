@@ -19,6 +19,23 @@
     @return calc(#{$minSizeUnit} + #{$minusSize} * ( 100vw - #{$minVwUnit} ) / #{$minusVw} );
 }
 
+/*   携帯画面600px➡︎320px-------------------- */
+@function respoSP($minSize, $maxSize) {
+    /*変動させたい最小の画面ビューポートのサイズ*/
+    $minVw: 320;
+    /*変動させたい最大の画面ビューポートのサイズ*/
+    $maxVw: 600;
+    /*最大ビューポート幅 ー 最小ビューポート幅*/
+    $minusVw: ($maxVw - $minVw);
+    /*最大サイズ ー 最小サイズ*/
+    $minusSize: ($maxSize - $minSize);
+    /*加算・減算用のpx単位付与*/
+    $minSizeUnit: $minSize*1px ;
+    $minVwUnit: $minVw*1px ;
+
+    @return calc(#{$minSizeUnit} + #{$minusSize} * ( 100vw - #{$minVwUnit} ) / #{$minusVw} );
+}
+
 /*   モバイル画面1024px➡︎600px-------------------- */
 @function respoTB($minSize, $maxSize) {
     /*変動させたい最小の画面ビューポートのサイズ*/
