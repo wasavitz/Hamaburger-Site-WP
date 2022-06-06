@@ -861,17 +861,18 @@ body {
   transform: rotate(-45deg);
 }
 
-.p-sidebar-menu__list {
+#menu-sidebar-menu > .menu-item > a {
   display: inline-block;
   margin-bottom: 40px;
   font-size: 24px;
 }
-.p-sidebar-menu__sub-menu {
-  margin-left: 20px;
-  padding-right: 20px;
+#menu-sidebar-menu > .menu-item .sub-menu {
   margin-bottom: 49px;
 }
-.p-sidebar-menu__sub-menu__list {
+#menu-sidebar-menu > .menu-item .sub-menu .menu-item-type-post_type {
+  margin-left: 20px;
+}
+#menu-sidebar-menu > .menu-item .sub-menu .menu-item-type-post_type > a {
   display: inline-block;
   margin-bottom: 23px;
   font-weight: normal;
@@ -1463,20 +1464,24 @@ body {
   text-align: center;
 }
 
-.p-footer-nav {
+#menu-footer-menu {
   display: flex;
   justify-content: center;
 }
-.p-footer-nav__item {
+#menu-footer-menu .menu-item-object-page:nth-child(1) {
+  padding-right: 10px;
+  border-style: solid;
+  border-width: 0 2px 0 0;
+  border-color: #FFFFFF;
+}
+#menu-footer-menu .menu-item-object-page:nth-child(2) {
+  padding-left: 10px;
+}
+#menu-footer-menu .menu-item-object-page > a {
+  display: inline-block;
+  height: 100%;
   font-size: 20px;
   color: #FFFFFF;
-}
-.p-footer-nav__line {
-  display: block;
-  width: 1px;
-  height: 30px;
-  margin: 0 10px 0 10px;
-  background-color: #FFFFFF;
 }
 
 /*   function, mixinの呼び出し -------------------- */

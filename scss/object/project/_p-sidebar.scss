@@ -31,7 +31,7 @@
         }
         /* スマホ・タブレットのみ */
         &--open {
-            right: 20px;  /* スクロールバーとの被り防止 */
+            right: 20px; /* スクロールバーとの被り防止 */
             z-index: 20;
             height: 57px;
             background-color: #f2ede9;
@@ -48,7 +48,7 @@
     &__line {
         display: inline-block;
         &--open {
-            position: absolute;  /* この設定でなぜ綺麗に揃うか？ */
+            position: absolute; /* この設定でなぜ綺麗に揃うか？ */
             height: 6px;
             width: 45px;
             background-color: #707070;
@@ -59,21 +59,24 @@
         }
     }
 }
-.p-sidebar-menu {
-    &__list {
-        display: inline-block;
-        margin-bottom: 40px;
-        font-size: 24px;
-    }
-    &__sub-menu {
-        margin-left: 20px;
-        padding-right: 20px;
-        margin-bottom: 49px;
-        &__list {
+#menu-sidebar-menu {
+    >.menu-item {
+        > a {
             display: inline-block;
-            margin-bottom: 23px;
-            font-weight: normal;
-            font-size: 20px;
+            margin-bottom: 40px;
+            font-size: 24px;
+        }
+        .sub-menu {
+            margin-bottom: 49px;
+            .menu-item-type-post_type {
+                margin-left: 20px;
+                > a {
+                    display: inline-block;
+                    margin-bottom: 23px;
+                    font-weight: normal;
+                    font-size: 20px;
+                }
+            }
         }
     }
 }

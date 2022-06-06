@@ -23,6 +23,17 @@ function custom_theme_setup() {
 }
 add_action( 'after_setup_theme', 'custom_theme_setup' );
 
+// サイドバー、フッターのカスタムメニュー化
+function register_my_menus() { 
+    register_nav_menus( array( //複数のナビゲーションメニューを登録する関数
+    //'「メニューの位置」の識別子' => 'メニューの説明の文字列',
+      'sidebar-menu' => 'Sidebar Menu',
+      'footer-menu'  => 'Footer Menu',
+    ) );
+  }
+  add_action( 'after_setup_theme', 'register_my_menus' );
+
+
 // function custom_block_editor() {
 //     //アイキャッチ画像（投稿サムネイル）
 //     add_filter( 'use_default_gallery_style', '__return_false' );
