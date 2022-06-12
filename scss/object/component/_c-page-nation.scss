@@ -15,13 +15,15 @@
     }
     &__text {
         display: none;
+        font-family: Roboto;
         @include m.mq(tab) {
             display: block;
+            margin-right: 20px;
             font-size: 16px;
             line-height: calc(33 / 16);
         }
     }
-    &__body {
+    .navigation {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,47 +33,83 @@
             gap: 14px;
             width: auto;
         }
-        &__number {
-            display: none;
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             @include m.mq(tab) {
-                display: grid;
-                place-items: center;
-                width: 32px;
-                height: 32px;
-                border: solid 1px #707070;
-                background-color: #ffffff;
-                font-size: 16px;
-                color: #707070;
-                font-family: Roboto;
-                text-align: center;
-                &:hover {
-                    color: #ffffff;
-                    background-color: #3c2b1c;
+                justify-content: inherit;
+                gap: 14px;
+                width: auto;
+            }
+            .page-numbers {
+                display: none;
+                @include m.mq(tab) {
+                    display: grid;
+                    place-items: center;
+                    width: 32px;
+                    height: 32px;
+                    border: solid 1px #707070;
+                    background-color: #ffffff;
+                    font-size: 16px;
+                    color: #707070;
+                    font-family: Roboto;
+                    text-align: center;
+                    &:hover {
+                        color: #ffffff;
+                        background-color: #3c2b1c;
+                    }
                 }
             }
-        }
-        &__list {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            color: #707070;
-            @include m.mq(tab) {
-                font-size: 0px;
+            a.prev,
+            a.next {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: normal;
+                color: #707070;
+                @include m.mq(tab) {
+                    font-size: 0px;
+                    border: inherit;
+                }
+                .fas {
+                    content: " ";
+                    display: block;
+                    width: 17px;
+                    height: 17px;
+                    margin-right: 8px;
+                    margin-left: 8px;
+                    background-image: url(../img/page-nation.svg);
+                }
+                .fa-angle-right {
+                    margin-left: auto;
+                    margin-left: 8px;
+                    transform: rotate(180deg);
+                }
             }
-        }
-        li:nth-child(1) a::before,
-        li:nth-child(11) a::after {
-            content: " ";
-            display: block;
-            width: 17px;
-            height: 17px;
-            margin-right: 8px;
-            margin-left: 8px;
-            background-image: url(../img/page-nation.svg);
-        }
-        li:nth-child(11) a::after {
-            margin-left: 8px;
-            transform: rotate(180deg);
+            a.next {
+                margin-left: auto;
+            }
+            // a.prev::before, a.next::after {
+            //     content: " ";
+            //     display: block;
+            //     width: 17px;
+            //     height: 17px;
+            //     margin-right: 8px;
+            //     margin-left: 8px;
+            //     background-image: url(../img/page-nation.svg);
+            // }
+            // a.next::after {
+            //     margin-left: auto;
+            //     margin-left: 8px;
+            //     transform: rotate(180deg);
+            // }
+            // 表示中のページのクラス
+            span.current {
+                color: #ffffff;
+                background-color: #3c2b1c;
+            }
         }
     }
 }

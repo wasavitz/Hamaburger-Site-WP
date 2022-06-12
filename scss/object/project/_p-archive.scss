@@ -44,16 +44,17 @@
         @include m.mq(pc) {
             padding: 60px 0 70px 0;
         }
-        &__heading {
+        p:nth-child(1) {
             margin-bottom: 30px;
             font-size: 28px;
             @include m.mq(tab) {
                 margin-bottom: 25px;
                 font-size: 36px;
-            }
+            }           
         }
-        &__text {
+        p:nth-child(2) {
             font-size: 16px;
+            font-weight: normal;
             line-height: calc(23/16);
         }
     }

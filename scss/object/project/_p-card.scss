@@ -13,7 +13,7 @@
             grid-row: inherit;
             grid-column: 1/2;
         }
-        &__picture {
+        >img {
             display: block;
             height: 100%;
             object-fit: cover;
