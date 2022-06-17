@@ -59,8 +59,8 @@
         }
     }
 }
-#menu-sidebar-menu {
-    >.menu-item {
+.menu {
+    >.menu-item-type-taxonomy {
         > a {
             display: inline-block;
             margin-bottom: 40px;
