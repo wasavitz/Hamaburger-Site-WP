@@ -71,9 +71,9 @@
       </section>
       <section class="p-access">
         <picture class="p-access__picture">
-          <source srcset="<?php echo get_template_directory_uri();?>/img/access-map--tab.svg" media="(min-width: 1025px)" />
-          <source srcset="<?php echo get_template_directory_uri();?>/img/access-map--pc.svg" media="(min-width: 600px)" />
-          <img src="<?php echo get_template_directory_uri();?>/img/access-map--sp.svg" alt="アクセス" class="p-access-image" />
+          <source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/img/access-map--pc.svg" media="(min-width: 1025px)" />
+          <source srcset="<?php echo esc_url( get_template_directory_uri() ); ?>/img/access-map--tab.svg" media="(min-width: 600px)" />
+          <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/access-map--sp.svg" alt="アクセス" class="p-access-image" />
         </picture>
         <div class="p-access__wrapper">
         </div>

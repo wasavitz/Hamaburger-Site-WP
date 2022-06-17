@@ -10,7 +10,7 @@
         <!-- ( '  ' )によって画像サイズ変更 -->
       <?php else : ?>
         <!-- アイキャッチ画像がない時のイメージ写真 -->
-        <img src="<?php bloginfo('template_url'); ?>/img/noimage.gif" width="100" height="100" alt="デフォルト画像" />
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/hero-cheeseburger.png" alt="チーズバーガー" />
       <?php endif; ?>
       <h2 id="post-<?php the_ID(); ?>" <?php post_class('p-hero__title'); ?>>
         <!-- 投稿タイトル表示 -->

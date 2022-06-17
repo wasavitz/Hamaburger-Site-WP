@@ -3,12 +3,12 @@
 @use "../../foundation/function" as *;
 
 .p-article {
-    // /* 見出し部分のカスタムプロパティ */
-    // :root {
-    //     --color-primary: #3C2A10;
-    //     --color-secondary: #3C2A10;
-    //     /* color:＃707070 foundationで指定 */
-    // }
+    /* 見出し部分のカスタムプロパティ */
+    :root {
+        --color-primary: #3C2A10;
+        --color-secondary: #3C2A10;
+        /* color:＃707070 foundationで指定 */
+    }
     gap: 30px;
     padding: 255px 0 177px 0;
     color: #3C2A10;

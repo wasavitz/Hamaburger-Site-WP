@@ -17,6 +17,10 @@
             display: block;
             height: 100%;
             object-fit: cover;
+            aspect-ratio: 1/1;
+            @include m.mq(tab) {
+                aspect-ratio: 16/9;
+            }
         }
     }
     &__description {
@@ -34,9 +38,8 @@
         }
     }
 }
-
 .p-card-desc {
-    padding: 30px 0 40px 17px;
+    padding: 30px 17px 40px 17px;
     color: #ffffff;
     @include m.mq(tab) {
         padding: 0 0 respoTB(40, 45) respoTB(17, 35);
@@ -53,16 +56,16 @@
         }
     }
     &__block {
-        &__heading {
+        width: 85%;
+        p:nth-child(1) {
             font-size: 16px;
             margin-bottom: 10px;
             @include m.mq(pc) {
                 font-size: respoPC(16, 24);
                 margin-bottom: 17px;
-            }
+            }  
         }
-        &__text {
-            width: 85%;
+        p:nth-child(2) {
             font-size: 16px;
             font-weight: normal;
             line-height: calc(23 / 16);

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main class="l-main">
   <article class="p-archive">
     <section class="p-archive__hero c-bg--prop">
@@ -21,10 +20,9 @@
                 <?php if (has_post_thumbnail()) : ?>
                   <!-- ( '  ' )によって画像サイズ変更 -->
                   <?php the_post_thumbnail('full'); ?>
-
                 <?php else : ?>
                   <!-- アイキャッチ画像がない時のイメージ写真 -->
-                  <img src="<?php bloginfo('template_url'); ?>/img/noimage.gif" width="100" height="100" alt="デフォルト画像" />
+                  <img src="<?php echo esc_url( get_template_directory_uri() ) ?>/img/burger-cheese.jpg" alt="チーズバーガー" />
                 <?php endif; ?>
               </div>
               <div class="p-card__description">
@@ -38,6 +36,7 @@
                   <a href="<?php the_permalink(); ?>" class="p-card-button__link">詳しく見る</a>
                 </p>
               </div>
+              <?php wp_link_pages(); ?>
             </article>
             <!-- ↓↓↓ ループ処理終了の記述　↓↓↓ -->
         <?php endwhile;

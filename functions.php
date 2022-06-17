@@ -22,33 +22,36 @@ function custom_theme_setup()
   add_theme_support('post-thumbnails');
   //投稿タイトル
   add_theme_support('title-tag');
+  add_theme_support( 'automatic-feed-links' );
+  add_theme_support( 'custom-header' );
+  add_theme_support( "custom-background");
 }
 add_action('after_setup_theme', 'custom_theme_setup');
 
 // メイン画像上にテンプレートファイル毎のテキストを表示 『現在：不使用』
-function get_category_title()
-{
-  if (is_archive()) :
-    $category_obj = get_the_category();
-    return $category_obj[1]->name;
-  elseif (is_page()) :
-    return get_the_title();
-  elseif (is_page()) :
-    return get_the_title();
-  endif;
-}
-function get_category_description()
-{
-  if (is_archive()) :
-    $category_description = get_the_category();
-    return $category_description[2]->description;
-  elseif (is_page()) :
-    return get_the_title();
-  elseif (is_page()) :
-    return get_the_title();
-  endif;
-}
+// function get_category_title()
+// {
+//   if (is_archive()) :
+//     $category_obj = get_the_category();
+//     return $category_obj[1]->name;
+//   elseif (is_page()) :
+//     return get_the_title();
+//   elseif (is_page()) :
+//     return get_the_title();
+//   endif;
+// }
 
+// function get_category_description()
+// {
+//   if (is_archive()) :
+//     $category_description = get_the_category();
+//     return $category_description[2]->description;
+//   elseif (is_page()) :
+//     return get_the_title();
+//   elseif (is_page()) :
+//     return get_the_title();
+//   endif;
+// }
 
 // サイドバー、フッターのカスタムメニュー化
 function register_my_menus()

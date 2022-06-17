@@ -410,7 +410,7 @@ th {
 body {
   display: grid;
   grid-template-rows: 217px auto 150px;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   color: #707070;
   font-weight: bold;
   line-height: 1.5;
@@ -487,7 +487,7 @@ body {
 
 /* 背景画像挿入時の基本共通プロパティ */
 .c-bg--prop {
-  background-position: center center;
+  background-position: center bottom 0px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -631,7 +631,7 @@ body {
     font-family: Roboto;
     text-align: center;
   }
-  .c-page-nation .navigation .nav-links .page-numbers:hover {
+  .c-page-nation .navigation .nav-links .page-numbers:hover:not(.prev, .next) {
     color: #ffffff;
     background-color: #3c2b1c;
   }
@@ -653,7 +653,6 @@ body {
 }
 .c-page-nation .navigation .nav-links a.prev .fas,
 .c-page-nation .navigation .nav-links a.next .fas {
-  content: " ";
   display: block;
   width: 17px;
   height: 17px;
@@ -848,7 +847,7 @@ body {
   top: 0;
   right: -100%;
   z-index: 300;
-  width: 250px;
+  width: 200px;
   /* スマホ・タブレットのみ */
 }
 @media screen and (min-width: 1025px) {
@@ -909,9 +908,15 @@ body {
 
 /*   function, mixinの呼び出し -------------------- */
 .p-article {
+  /* 見出し部分のカスタムプロパティ */
   gap: 30px;
   padding: 255px 0 177px 0;
   color: #3C2A10;
+}
+.p-article :root {
+  --color-primary: #3C2A10;
+  --color-secondary: #3C2A10;
+  /* color:＃707070 foundationで指定 */
 }
 @media screen and (min-width: 600px) {
   .p-article {
@@ -1157,7 +1162,7 @@ body {
 .p-hero {
   position: relative;
 }
-.p-hero .wp-post-image {
+.p-hero .wp-post-image, .p-hero > img {
   position: absolute;
   top: 0;
   right: 0;
@@ -1167,7 +1172,7 @@ body {
      object-fit: cover;
 }
 @media screen and (min-width: 600px) {
-  .p-hero .wp-post-image {
+  .p-hero .wp-post-image, .p-hero > img {
     height: 500px !important;
   }
 }
@@ -1261,7 +1266,7 @@ body {
   display: flex;
   /* 親要素に子要素（container）の高さを合わせるため */
   min-height: 642px;
-  background-image: url(../img/font-page-Take.svg);
+  background-image: url(../img/front-page-Take.svg);
 }
 .p-brunch-menu:nth-child(2) {
   background-image: url(../img/front-page-Eat.svg);
@@ -1517,10 +1522,21 @@ body {
   display: grid;
   grid-template-rows: 283px auto;
   grid-template-columns: auto;
+  /* archive-serchの検索結果 */
 }
 @media screen and (min-width: 1025px) {
   .p-archive {
     grid-template-rows: 239px auto;
+  }
+}
+.p-archive__result {
+  color: #3C2A10;
+  font-size: 28px;
+  line-height: 1.5;
+}
+@media screen and (min-width: 600px) {
+  .p-archive__result {
+    font-size: 36px;
   }
 }
 .p-archive__hero {
@@ -1554,31 +1570,31 @@ body {
   font-size: 16px;
   line-height: 1.4375;
 }
-.p-archive__description {
+.p-archive__description, .p-archive__result {
   padding: 30px 0 19px 0;
   color: #3C2A10;
 }
 @media screen and (min-width: 600px) {
-  .p-archive__description {
+  .p-archive__description, .p-archive__result {
     padding: 36px 0 37px 0;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-archive__description {
+  .p-archive__description, .p-archive__result {
     padding: 60px 0 70px 0;
   }
 }
-.p-archive__description p:nth-child(1) {
+.p-archive__description p:nth-child(1), .p-archive__result p:nth-child(1) {
   margin-bottom: 30px;
   font-size: 28px;
 }
 @media screen and (min-width: 600px) {
-  .p-archive__description p:nth-child(1) {
+  .p-archive__description p:nth-child(1), .p-archive__result p:nth-child(1) {
     margin-bottom: 25px;
     font-size: 36px;
   }
 }
-.p-archive__description p:nth-child(2) {
+.p-archive__description p:nth-child(2), .p-archive__result p:nth-child(2) {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4375;
@@ -1611,6 +1627,12 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  aspect-ratio: 1/1;
+}
+@media screen and (min-width: 600px) {
+  .p-card__flame > img {
+    aspect-ratio: 16/9;
+  }
 }
 .p-card__description {
   padding: 30px 0 44px 0;
@@ -1632,7 +1654,7 @@ body {
 }
 
 .p-card-desc {
-  padding: 30px 0 40px 17px;
+  padding: 30px 17px 40px 17px;
   color: #ffffff;
 }
 @media screen and (min-width: 600px) {
@@ -1655,18 +1677,20 @@ body {
     font-size: calc(20px + 16 * ( 100vw - 1025px ) / 895 );
   }
 }
-.p-card-desc__block__heading {
+.p-card-desc__block {
+  width: 85%;
+}
+.p-card-desc__block p:nth-child(1) {
   font-size: 16px;
   margin-bottom: 10px;
 }
 @media screen and (min-width: 1025px) {
-  .p-card-desc__block__heading {
+  .p-card-desc__block p:nth-child(1) {
     font-size: calc(16px + 8 * ( 100vw - 1025px ) / 895 );
     margin-bottom: 17px;
   }
 }
-.p-card-desc__block__text {
-  width: 85%;
+.p-card-desc__block p:nth-child(2) {
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4375;

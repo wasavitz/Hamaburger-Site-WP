@@ -1,7 +1,7 @@
 /* 背景画像挿入時の基本共通プロパティ */
 .c-bg {
     &--prop {
-    background-position: center center;
+    background-position: center bottom 0px;
     background-repeat: no-repeat;
     background-size: cover;
     }

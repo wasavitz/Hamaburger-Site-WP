@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="<?php language_attributes(); ?>">
 <head>
 <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 </head>
 
 <body <?php body_class();?>>
+<?php wp_body_open(); ?>
   <header class="l-header">
     <div class="p-header c-flex--flow">
       <h1 class="c-title--Roboto p-header__title">
