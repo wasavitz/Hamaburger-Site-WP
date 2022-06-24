@@ -9,7 +9,7 @@ body {
     color: #707070;
     font-weight: bold;
     line-height: 1.5;
-    font-family: M+PLUS+1p;
+    font-family: 'M+PLUS+1p';
     @include m.mq(pc) {
         grid-template-columns: auto respoPC(270, 367);
     }
