@@ -3,7 +3,7 @@
 function my_enqueue_scripts()
 {
   // Google Fonts & font-awesome読み込み
-  wp_enqueue_script('mplus1p', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap', array());
+  wp_enqueue_script('mplus1p', 'https//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap', array());
   wp_enqueue_script('font-awesome', '//use.fontawesome.com/releases/v6.0.0/css/all.css', array());
   // WordPress本体のjquery.jsを読み込まない
   wp_deregister_script('jquery');
@@ -77,7 +77,6 @@ function max_show_page_number() {
   $max_page = $wp_query->max_num_pages;
   echo $max_page;
 }
-
 
 // function custom_block_editor() {
 //     //アイキャッチ画像（投稿サムネイル）
