@@ -1,7 +1,7 @@
 /* font-family: Roboto基準 */
 .c-title {
     &--Roboto {
-        font-family: 'Roboto';
+        font-family: 'Roboto', sans-serif;
     }
     &--align-v {    /* v=virtical */
         display: flex;

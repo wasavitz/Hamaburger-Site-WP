@@ -2,8 +2,9 @@
 // jQuey and css読み込み
 function my_enqueue_scripts()
 {
-  // Google Fonts & font-awesome読み込み
-  wp_enqueue_script('mplus1p', 'https//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap', array());
+  // // Google Fonts & font-awesome読み込み
+  wp_register_style( 'googleFonts', '//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;300;400;500;700;800;900|Roboto:wght@100;300;400;500;700;900');
+  wp_enqueue_style( 'googleFonts');
   wp_enqueue_script('font-awesome', '//use.fontawesome.com/releases/v6.0.0/css/all.css', array());
   // WordPress本体のjquery.jsを読み込まない
   wp_deregister_script('jquery');
